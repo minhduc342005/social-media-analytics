@@ -22,11 +22,24 @@ Analyze social media marketing performance across multiple platforms to help bus
 
 ## Process
 
-* Inspected the data for missing or inconsistent values and handled them using Power Query.
-* Ensured data consistency and cleanliness in terms of data types, formats, and values used.
-* Created DAX measures to calculate key metrics: Total Posts, Avg CTR, Avg Engagement, Avg Views.
-* Built visualizations (bar charts, slicers) based on the defined business questions.
-* Combined all visuals into a single interactive dashboard with filters for Platform, Region, and Content Type to create a dynamic experience.
+### Python — Data Cleaning & EDA
+* Loaded dataset using pandas read_excel()
+* Explored data with df.info(), df.describe(), df.isnull().sum()
+* Standardized column names to snake_case
+* Feature engineering: added month, day_of_week, quarter columns
+* Exported cleaned data to social_media_cleaned.csv
+
+### SQL Server — Data Analysis
+* Connected Python to SQL Server via pyodbc + sqlalchemy
+* Loaded 5,600 rows into SQL Server database
+* Wrote 9 SQL queries to answer business questions
+* Used AVG, GROUP BY, ORDER BY, WHERE, ROUND functions
+
+###  Power BI — Dashboard
+* Connected Power BI directly to SQL Server
+* Created DAX measures: Total Posts, Avg CTR, Avg Engagement, Avg Views
+* Built bar charts, donut chart, line chart, and slicers
+* Combined all visuals into 2-page interactive dashboard
 
 ## Dashboard
 <img width="1401" height="797" alt="SMMPA1" src="https://github.com/user-attachments/assets/524bf889-4e79-4abe-b4b7-dc311ba490d5" />
@@ -35,11 +48,15 @@ Analyze social media marketing performance across multiple platforms to help bus
 
 ## Project Insights
 
-* **Instagram** has the highest average engagement among all platforms, followed by Facebook and TikTok.
-* **Video** is the top-performing post type, significantly outperforming other formats like Article, PDF, and Carousel.
-* **Product Promotion** and **Educational** are the content categories that drive the most engagement.
-* **Japan** and **USA** are the leading regions in terms of engagement, followed by Australia and Brazil.
-* A total of **5,600 posts** were analyzed, with an Avg Engagement of **115.44K** and Avg Views of **858.26K**.
+* Instagram is the top platform with 135K avg engagement — nearly 2x LinkedIn (85K)
+* Video posts drive 160K avg engagement — 2.7x more than Image posts
+* Product Promotion ranks #1 in every region — USA and Australia lead at 182K
+* Best time to post: Friday at 6PM with 173K avg engagement
+* Germany has the highest CTR (0.0191) — highest click intent market
+* #ProductDemo drives the most impressions (2.1M avg)
+* #MemeMonday drives the most clicks (43K avg) despite lower reach
+Japan leads video views (687K), Germany leads live streaming (127K)
+Sponsored outperforms Organic by +14% engagement and +17% impressions
 
 ## Final Conclusion:
 
