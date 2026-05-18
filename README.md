@@ -29,8 +29,8 @@ Analyze social media marketing performance across multiple platforms to help bus
 * Combined all visuals into a single interactive dashboard with filters for Platform, Region, and Content Type to create a dynamic experience.
 
 ## Dashboard
-<img width="1458" height="817" alt="SMMPA2" src="https://github.com/user-attachments/assets/e0908dd3-221c-4c65-b60b-7d6985df6681" />
 <img width="1401" height="797" alt="SMMPA1" src="https://github.com/user-attachments/assets/524bf889-4e79-4abe-b4b7-dc311ba490d5" />
+<img width="1458" height="817" alt="SMMPA2" src="https://github.com/user-attachments/assets/e0908dd3-221c-4c65-b60b-7d6985df6681" />
 
 
 ## Project Insights
